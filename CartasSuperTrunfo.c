@@ -9,6 +9,10 @@ int main() {
     float PIB1= 270577155.89;
     int pontosTuristicos1 = 4;
 
+     //cálculos
+    float densidade1 = populacao1 / area1;
+    float pibPerCapita1 = PIB1 / populacao1;
+
     // carta 2 - Tapiratiba
     char estado2[]= "SP";
     char codigo2[]= "B02";
@@ -17,6 +21,10 @@ int main() {
     float area2= 220.575;
     float PIB2= 161548000.0;
     int pontosTuristicos2=3;
+
+     // cálculos
+    float densidade2 = populacao2 / area2;
+    float pibPerCapita2 = PIB2 / populacao2;
 
   
     // Exibição da carta 1
@@ -28,6 +36,10 @@ int main() {
     printf("Área: %.3f km²\n", area1);
     printf("PIB: R$.%.2f\n", PIB1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+
+     // cálculos
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: R$%.2f\n", pibPerCapita1 );
     
       printf("\n"); // aqui pula-se uma linha
 
@@ -40,6 +52,10 @@ int main() {
     printf("Área: %.3f km²\n", area2);
     printf("PIB: R$%.2f\n", PIB2);
     printf("Número de Pontos Turísticos: %d\n",pontosTuristicos2);
+
+    //Cálculos
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: R$%.2f\n", pibPerCapita2);
 
 return 0;
 }
